@@ -1,0 +1,129 @@
+body {
+    overflow-x: hidden;
+}
+
+main {
+    min-height: 80vh;
+    width: 100vw;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    height: 15vh;
+    color: var(--dark-blue);
+    padding-left: 120px;
+    font-size: 3.5rem;
+    font-weight: 600;
+    background-position: bottom;
+    background-size: cover;
+    background-color: var(--white-default);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100vw;
+    min-height: 65vh;
+    height: auto;
+    padding: 60px 120px;
+    background-image: url(../assets/bd-corrida.png);
+}
+
+.sec-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 60px 60px;
+    width: 100%;
+    min-height: 65vh;
+    height: auto;
+    background-image: url(../assets/bd-corrida.png);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+    gap: 48px;
+    padding: 52px 0px;
+    border-radius: 20px;
+    border: 4px solid #0054ff;
+    background: linear-gradient(180deg, #0054ff 0%, #00005a 100%);
+}
+
+.card img {
+    width: 100%;
+    max-width: 140px;
+}
+
+.txt {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.info-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-card span {
+    font-size: 40px;
+    font-weight: 400;
+    color: #fff;
+}
+
+iframe {
+    height: 40vw;
+    width: 100%;
+}
+
+@media (max-width: 920px) {
+    .titulo {
+        padding-left: 60px;
+    }
+    .container {
+        padding: 60px;
+    }
+}
+
+@media (max-width: 540px) {
+    .titulo {
+        padding-left: 2rem;
+    }
+    .container {
+        padding: 60px 2rem;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .card {
+        width: auto;
+    }
+
+    .txt {
+        font-size: 32px;
+    }
+
+    .info-card span {
+        font-size: 24px;
+    }
+
+    .card {
+        padding: 32px 0px;
+    }
+
+    .sec-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+}

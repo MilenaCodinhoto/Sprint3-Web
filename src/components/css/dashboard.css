@@ -1,0 +1,124 @@
+main {
+    min-height: 80vh;
+    width: 100vw;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    height: 15vh;
+    color: var(--dark-blue);
+    padding-left: 120px;
+    font-size: 3.5rem;
+    font-weight: 600;
+    background-position: bottom;
+    background-size: cover;
+    background-color: var(--white-default);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100vw;
+    min-height: 65vh;
+    height: auto;
+    padding: 60px 120px;
+    background-image: url(../assets/bd-corrida.png);
+    background-size: cover;
+    background-position: end;
+}
+
+.prox-corrida {
+    cursor: pointer;
+}
+
+.corrida {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.corrida h2 {
+    font-size: 64px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.info-corrida img {
+    width: 90vw;
+    height: auto;
+}
+
+.colocacao h2 {
+    font-size: 64px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.carros img {
+    cursor: pointer;
+    width: 90vw;
+    height: auto;
+}
+
+@media (max-width: 920px) {
+    .titulo {
+        padding-left: 60px;
+    }
+
+    .container {
+        padding: 60px;
+    }
+
+    .corrida {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .corrida h2 {
+        font-size: 40px;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    .info-corrida img {
+        width: 90vw;
+        height: 15vh;
+    }
+}
+
+@media (max-width: 540px) {
+    .titulo {
+        padding-left: 2rem;
+    }
+
+    .container {
+        padding: 60px 2rem;
+    }
+
+    .corrida {
+        display: flex;
+        flex-direction: column;
+        width: 9vw;
+        gap: 20px;
+    }
+
+    .corrida h2 {
+        font-size: 40px;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    .info-corrida img {
+        width: 90vw;
+        height: 15vh;
+    }
+}

@@ -1,0 +1,221 @@
+body {
+    overflow-x: hidden;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 4%;
+    width: 100vw;
+    min-height: 65vh;
+    padding: 0px 120px;
+}
+
+.bg-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 80%;
+    border-radius: 20px;
+    padding: 3px;
+    background: var(--linear-gradient-cyan);
+}
+
+.card {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: var(--dark-blue);
+}
+
+.box-info {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+}
+
+.img-card {
+    height: 100%;
+    width: 50%;
+}
+
+#nome {
+    background: linear-gradient(90deg, #ffe804 0%, #ff7631 49.5%, #ff09f5 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: clamp(0.75rem, -1.5rem + 3.3333vw, 2.5rem);
+    font-weight: 700;
+}
+
+#idade {
+    color: var(--white-default);
+    font-size: clamp(0.75rem, -0.8571rem + 2.381vw, 2rem);
+    font-weight: 600;
+}
+
+#area {
+    margin-top: 32px;
+    color: var(--white-default);
+    font-size: clamp(0.75rem, -1.5rem + 3.3333vw, 2.5rem);
+    font-weight: 700;
+}
+
+.media {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 40%;
+}
+
+.icon-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    font-size: 32px;
+    border-radius: 100%;
+    transition: 0.5s ease;
+    background: #2a46d8;
+    color: var(--white-default);
+}
+
+.icon-card:hover {
+    background: var(--linear-gradient);
+    color: var(--white-default);
+}
+
+.radius {
+    border-radius: 20px 0px 0px 20px !important;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    height: 15vh;
+    color: #fff;
+    padding-left: 120px;
+    font-size: 3.5rem;
+    font-weight: 600;
+    background-position: bottom;
+    background-size: cover;
+    background: url(../assets/bg-top.png);
+}
+@media (min-width: 1080px) and (max-width: 1200px) {
+    .media {
+        display: flex;
+        gap: 1.5rem;
+        margin-top: 20%;
+    }
+
+    .box-info {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 1080px) {
+    .bg-card {
+        width: 100%;
+        height: 80%;
+    }
+
+    #nome {
+        font-size: clamp(1rem, -0.5rem + 4.4444vw, 2.5rem);
+        font-weight: 700;
+    }
+
+    #idade {
+        color: var(--white-default);
+        font-size: clamp(0.75rem, -0.5rem + 3.7037vw, 2rem);
+        font-weight: 600;
+    }
+
+    #area {
+        margin-top: 32px;
+        color: var(--white-default);
+        font-size: clamp(1rem, -0.5rem + 4.4444vw, 2.5rem);
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 920px) {
+    .titulo {
+        padding-left: 60px;
+    }
+
+    .container {
+        padding: 0px 60px;
+    }
+}
+
+@media (max-width: 540px) {
+    .titulo {
+        font-size: clamp(1.75rem, 0.6591rem + 5.4545vw, 2.5rem);
+        padding-left: 60px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        padding: 20px 60px;
+    }
+
+    .bg-card {
+        width: 120%;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+        padding: 10px;
+    }
+
+    .img-card {
+        height: 80vw;
+        width: 100%;
+        border-radius: 0px 10px 10px 0px;
+    }
+
+    .radius {
+        border-radius: 20px 10px 10px 20px !important;
+    }
+
+    .box-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        min-width: 0px;
+        padding: 12px 0px;
+    }
+
+    .media {
+        width: auto;
+        min-width: 0px;
+    }
+
+    #nome {
+        font-size: clamp(1.5rem, 0.7727rem + 3.6364vw, 2rem);
+        font-weight: 700;
+    }
+
+    #area {
+        margin-top: 32px;
+        color: var(--white-default);
+        font-size: clamp(1.5rem, 0.7727rem + 3.6364vw, 2rem);
+        font-weight: 700;
+    }
+    #idade {
+        color: var(--white-default);
+        font-size: clamp(1.25rem, 0.5227rem + 3.6364vw, 1.75rem);
+        font-weight: 600;
+    }
+}
